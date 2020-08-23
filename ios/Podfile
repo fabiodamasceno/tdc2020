@@ -1,3 +1,6 @@
+require_relative '../node_modules/react-native/scripts/react_native_pods'
+require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
+
 # Uncomment the next line to define a global platform for your project
 platform :ios, '12.0'
 
@@ -19,5 +22,10 @@ target 'ChatApp' do
 
   pod 'Alamofire'
   pod 'Kingfisher'
+
+  config = use_native_modules!
+
+  use_react_native!(:path => config["reactNativePath"])
+
 
 end

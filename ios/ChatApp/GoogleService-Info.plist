@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1083847673548-pprbh7ej1n9h9i56ii7822l17ivpc2km.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1083847673548-pprbh7ej1n9h9i56ii7822l17ivpc2km</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDYN3ixuAcI5waGV_UvrP6PJhHXB63PoVY</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1083847673548</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.lambda3.chat</string>
+	<key>PROJECT_ID</key>
+	<string>tdc2020-437f6</string>
+	<key>STORAGE_BUCKET</key>
+	<string>tdc2020-437f6.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1083847673548:ios:94f983b35e07b28bfc2469</string>
+	<key>DATABASE_URL</key>
+	<string>https://tdc2020-437f6.firebaseio.com</string>
+</dict>
+</plist>

@@ -1,24 +1,23 @@
-require_relative '../node_modules/react-native/scripts/react_native_pods'
-require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
+# Uncomment the next line to define a global platform for your project
+platform :ios, '12.0'
 
-platform :ios, '10.0'
+target 'ChatApp' do
+  use_frameworks!
 
-target 'TDC2020' do
-  config = use_native_modules!
+  # Pods for ChatApp
+  pod 'MessageKit'
 
-  use_react_native!(:path => config["reactNativePath"])
+  pod 'FacebookCore'
+  pod 'FacebookLogin'
+  pod 'FacebookShare'
 
-  target 'TDC2020Tests' do
-    inherit! :complete
-    # Pods for testing
-  end
+  pod 'Firebase/Core'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Database'
+  pod 'Firebase/Storage'
+  pod 'Firebase/Firestore'
 
-  # Enables Flipper.
-  #
-  # Note that if you have use_frameworks! enabled, Flipper will not work and
-  # you should disable these next few lines.
-  use_flipper!
-  post_install do |installer|
-    flipper_post_install(installer)
-  end
+  pod 'Alamofire'
+  pod 'Kingfisher'
+
 end

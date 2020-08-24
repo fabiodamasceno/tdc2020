@@ -28,7 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Helper file to access remote data for a user
         let remoteData = ATCRemoteData()
         // Checks if user's firestore actually has channels setup
-        remoteData.getChannels()
+        remoteData.getChannels()
         
         // For testing, set this to a usr from 0-4 and run it to your simulator
         // Then, set it to any other user and run it to your phone. THEN-> see my comment in ATCChatMockStore.swift

@@ -8,7 +8,10 @@ import animal.forest.chat.prefs.Prefs;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 
-public class App extends Application {
+import com.facebook.react.ReactApplication;
+import com.facebook.react.ReactNativeHost;
+
+public class App extends Application implements ReactApplication {
 
     private static App sInstance;
 
@@ -55,5 +58,10 @@ public class App extends Application {
         activity.finish();
         activity.startActivity(i);
         System.exit(0);
+    }
+
+    @Override
+    public ReactNativeHost getReactNativeHost() {
+        return new ChatReactNativeHost(this);
     }
 }

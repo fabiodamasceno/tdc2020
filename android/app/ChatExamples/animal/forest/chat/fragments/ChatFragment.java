@@ -7,6 +7,8 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import com.pubnub.api.PubNub;
@@ -35,6 +37,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 import animal.forest.chat.BuildConfig;
 import animal.forest.chat.R;
+import animal.forest.chat.ReactChatActivity;
 import animal.forest.chat.adapters.ChatAdapter;
 import animal.forest.chat.pubnub.History;
 import animal.forest.chat.pubnub.Message;
@@ -119,6 +122,7 @@ public class ChatFragment extends ParentFragment implements MessageComposer.List
         mChatsRecyclerView.setAdapter(mChatAdapter);
 
         mMessageComposer.setListener(this);
+        mMessageComposer.setCameraListener(this);
 
         // tag::HIS-5.2[]
 
@@ -302,6 +306,11 @@ public class ChatFragment extends ParentFragment implements MessageComposer.List
     public void onDestroy() {
         hostActivity.getPubNub().removeListener(mPubNubListener);
         super.onDestroy();
+    }
+
+    @Override
+    public void onCameraClick() {
+        startActivity(ReactChatActivity.getIntent(this.fragmentContext));
     }
 
     // tag::SEND-2[]

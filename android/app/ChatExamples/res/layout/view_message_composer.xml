@@ -6,10 +6,13 @@
     android:layout_height="wrap_content"
     android:background="@drawable/message_composer_bg">
 
+
     <EditText
         android:id="@+id/composer_edittext"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="293dp"
+        android:layout_height="61dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
         android:layout_toStartOf="@+id/composer_options"
         android:layout_toLeftOf="@+id/composer_options"
         android:background="@null"
@@ -52,5 +55,16 @@
             android:scaleType="centerInside"
             app:srcCompat="@drawable/ic_send" />
     </LinearLayout>
+
+    <ImageView
+        android:id="@+id/camera"
+        android:layout_width="59dp"
+        android:layout_height="61dp"
+        android:background="@color/cinder"
+        android:clickable="true"
+        android:contentDescription="@string/attach"
+        android:focusable="true"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/ic_camera" />
 
 </RelativeLayout>

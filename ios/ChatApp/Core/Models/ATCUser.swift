@@ -31,14 +31,6 @@ open class ATCUser: NSObject, ATCGenericBaseModel {
         fatalError()
     }
 
-//    public func mapping(map: Map) {
-//        username            <- map["username"]
-//        email               <- map["email"]
-//        firstName           <- map["first_name"]
-//        lastName            <- map["last_name"]
-//        profilePictureURL   <- map["profile_picture"]
-//    }
-
     public func fullName() -> String {
         guard let firstName = firstName, let lastName = lastName else { return "" }
         return "\(firstName) \(lastName)"

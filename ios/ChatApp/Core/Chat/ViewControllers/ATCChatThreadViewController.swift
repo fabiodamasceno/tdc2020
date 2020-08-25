@@ -24,6 +24,7 @@ struct ATCChatUIConfiguration {
 
 class ATCChatThreadViewController: MessagesViewController, MessagesDataSource, InputBarAccessoryViewDelegate {
   var user: ATCUser
+  private var rnManager = RNManager()
   private var messages: [ATChatMessage] = []
   private var messageListener: ListenerRegistration?
   
@@ -70,7 +71,7 @@ class ATCChatThreadViewController: MessagesViewController, MessagesDataSource, I
     print("thread view controller did load")
     
     reference = db.collection(["channels", channel.id, "thread"].joined(separator: "/"))
-    print("reference.path for thread: \(reference?.path)")
+    print("reference.path for thread: \(String(describing: reference?.path))")
     
     self.remoteData.checkPath(path: ["channels", channel.id, "thread"], dbRepresentation: channel.representation)
     
@@ -135,16 +136,23 @@ class ATCChatThreadViewController: MessagesViewController, MessagesDataSource, I
   // MARK: - Actions
   
   @objc private func cameraButtonPressed() {
-    let picker = UIImagePickerController()
-    picker.delegate = self
-    
-    if UIImagePickerController.isSourceTypeAvailable(.camera) {
-      picker.sourceType = .camera
-    } else {
-      picker.sourceType = .photoLibrary
+    DispatchQueue.main.async {
+      let requestController = UIViewController()
+      requestController.modalPresentationStyle = .fullScreen
+      requestController.view = self.rnManager.loadReactNativeView(moduleName: "Chat", initialProperties: [:])
+      requestController.view.backgroundColor = UIColor.white
+      self.show(requestController, sender: self)
     }
+    // let picker = UIImagePickerController()
+    // picker.delegate = self
     
-    present(picker, animated: true, completion: nil)
+    // if UIImagePickerController.isSourceTypeAvailable(.camera) {
+    //   picker.sourceType = .camera
+    // } else {
+    //   picker.sourceType = .photoLibrary
+    // }
+    
+    // present(picker, animated: true, completion: nil)
   }
   
   // MARK: - Helpers

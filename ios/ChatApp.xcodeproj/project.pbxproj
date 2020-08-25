@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07CFA05A24F48FAA00786B71 /* RNBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CFA05924F48FAA00786B71 /* RNBridge.swift */; };
+		07CFA05C24F4907D00786B71 /* RNManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CFA05B24F4907D00786B71 /* RNManager.swift */; };
+		07CFA05E24F4975700786B71 /* main.jsbundle in Sources */ = {isa = PBXBuildFile; fileRef = 07CFA05D24F4975700786B71 /* main.jsbundle */; };
 		17111D442128F29C008C7FBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17111D432128F29C008C7FBE /* AppDelegate.swift */; };
 		17111D4B2128F29E008C7FBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17111D4A2128F29E008C7FBE /* Assets.xcassets */; };
 		17111D4E2128F29E008C7FBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17111D4C2128F29E008C7FBE /* LaunchScreen.storyboard */; };
@@ -110,6 +113,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		07CFA05924F48FAA00786B71 /* RNBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RNBridge.swift; sourceTree = "<group>"; };
+		07CFA05B24F4907D00786B71 /* RNManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RNManager.swift; sourceTree = "<group>"; };
+		07CFA05D24F4975700786B71 /* main.jsbundle */ = {isa = PBXFileReference; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
 		17111D402128F29C008C7FBE /* ChatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17111D432128F29C008C7FBE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17111D4A2128F29E008C7FBE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -229,6 +235,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07CFA05824F48DC600786B71 /* React */ = {
+			isa = PBXGroup;
+			children = (
+				07CFA05924F48FAA00786B71 /* RNBridge.swift */,
+				07CFA05B24F4907D00786B71 /* RNManager.swift */,
+				07CFA05D24F4975700786B71 /* main.jsbundle */,
+			);
+			path = React;
+			sourceTree = "<group>";
+		};
 		17111D372128F29C008C7FBE = {
 			isa = PBXGroup;
 			children = (
@@ -250,6 +266,7 @@
 		17111D422128F29C008C7FBE /* ChatApp */ = {
 			isa = PBXGroup;
 			children = (
+				07CFA05824F48DC600786B71 /* React */,
 				17A2B6642148C1A90071D01F /* Core */,
 				17111D432128F29C008C7FBE /* AppDelegate.swift */,
 				17111D4A2128F29E008C7FBE /* Assets.xcassets */,
@@ -729,6 +746,7 @@
 				17E7FC202148C9E900C896C6 /* UIScrollView.swift in Sources */,
 				17A2B88E2148C1AD0071D01F /* UIColor.swift in Sources */,
 				17A2B8C42148C1AD0071D01F /* ATCViewControllerContainerRowAdapter.swift in Sources */,
+				07CFA05A24F48FAA00786B71 /* RNBridge.swift in Sources */,
 				171120672128F4EA008C7FBE /* ChatHostViewController.swift in Sources */,
 				17A2B9962148C1AE0071D01F /* LayoutConstraint.swift in Sources */,
 				17A2B8712148C1AC0071D01F /* ATCChatThreadsViewController.swift in Sources */,
@@ -740,6 +758,7 @@
 				17A2B8D42148C1AD0071D01F /* ATCMenuHeaderTableViewCell.swift in Sources */,
 				17A2B8DA2148C1AD0071D01F /* ATCGenericCollectionViewController.swift in Sources */,
 				17A2B8CB2148C1AD0071D01F /* UIViewController+ATCAdditions.swift in Sources */,
+				07CFA05C24F4907D00786B71 /* RNManager.swift in Sources */,
 				17A2B97C2148C1AE0071D01F /* ConstraintAttributes.swift in Sources */,
 				17A2B9252148C1AD0071D01F /* ATCCircledIconMenuCollectionViewCell.swift in Sources */,
 				17A2B8702148C1AC0071D01F /* ATCChatHomeViewController.swift in Sources */,
@@ -759,6 +778,7 @@
 				17A2B9852148C1AE0071D01F /* ConstraintConfig.swift in Sources */,
 				17A2B9132148C1AD0071D01F /* ATCStoryCollectionViewCell.swift in Sources */,
 				17A2B9972148C1AE0071D01F /* ConstraintLayoutGuide+Extensions.swift in Sources */,
+				07CFA05E24F4975700786B71 /* main.jsbundle in Sources */,
 				17A2B8D22148C1AD0071D01F /* ATCMenuTableViewController.swift in Sources */,
 				17A2B88D2148C1AD0071D01F /* UIView.swift in Sources */,
 				17A2B8D12148C1AD0071D01F /* ATCMenuCollectionViewController.swift in Sources */,

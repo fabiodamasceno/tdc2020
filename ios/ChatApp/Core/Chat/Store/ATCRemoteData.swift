@@ -21,12 +21,6 @@ class ATCRemoteData{
             } else {
                 if querySnapshot?.documents == nil{
                     print("no channels or threads found for this user's organization\n. No worries a brand new one will automatically be created when you first attempt to send a message")
-                }else{
-                    // Uncomment to see all documents in this user's org
-                    // Usually a bad thing though, only use to debug and do not release
-//                    for document in querySnapshot!.documents {
-//                        print("\(document.documentID) => \(document.data())")
-//                    }
                 }
             }
         }

@@ -7,23 +7,23 @@ project.ext.react = [
 ]
 
 
-import java.util.Map;
+        import java.util.Map;
 
-check.dependsOn('checkstyle')
+        check.dependsOn('checkstyle')
 
-def snippetsPath = "snippets"
-def examplesPath = "examples"
-def integrationTestsPath = "integrationtests"
-def enableHermes = project.ext.react.get("enableHermes", false);
-def jscFlavor = 'org.webkit:android-jsc:+'
+        def snippetsPath = "snippets"
+        def examplesPath = "ChatExamples"
+        def integrationTestsPath = "integrationtests"
+        def enableHermes = project.ext.react.get("enableHermes", false);
+        def jscFlavor = 'org.webkit:android-jsc:+'
 
 // tag::KEYS-1[]
-android {
-    compileSdkVersion rootProject.ext.compileSdkVersion
-    defaultConfig {
-        // tag::ignore[]
-        applicationId "com.pubnub.crc.android"
-        // end::ignore[]
+        android {
+            compileSdkVersion rootProject.ext.compileSdkVersion
+            defaultConfig {
+                // tag::ignore[]
+                applicationId "com.pubnub.crc.android"
+                // end::ignore[]
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

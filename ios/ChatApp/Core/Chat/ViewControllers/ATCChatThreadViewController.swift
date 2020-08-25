@@ -143,16 +143,6 @@ class ATCChatThreadViewController: MessagesViewController, MessagesDataSource, I
       requestController.view.backgroundColor = UIColor.white
       self.show(requestController, sender: self)
     }
-    // let picker = UIImagePickerController()
-    // picker.delegate = self
-    
-    // if UIImagePickerController.isSourceTypeAvailable(.camera) {
-    //   picker.sourceType = .camera
-    // } else {
-    //   picker.sourceType = .photoLibrary
-    // }
-    
-    // present(picker, animated: true, completion: nil)
   }
   
   // MARK: - Helpers

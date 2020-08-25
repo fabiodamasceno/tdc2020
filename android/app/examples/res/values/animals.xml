@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="first_names">
+        <item>Funky</item>
+        <item>Parrot</item>
+        <item>Happy</item>
+        <item>Sleeping</item>
+        <item>Happy</item>
+        <item>Long</item>
+        <item>Little</item>
+        <item>Blue</item>
+        <item>Colorful</item>
+        <item>Tropical</item>
+        <item>Cute</item>
+        <item>White</item>
+        <item>King</item>
+        <item>Night</item>
+        <item>Forest</item>
+        <item>Striped</item>
+        <item>Jungle</item>
+        <item>Baby</item>
+        <item>Wild</item>
+        <item>Safari</item>
+        <item>Honey</item>
+        <item>Angry</item>
+        <item>Mountain</item>
+        <item>Scary</item>
+        <item>Greenland</item>
+        <item>Crazy</item>
+        <item>Black</item>
+        <item>Red</item>
+        <item>Bamboo</item>
+        <item>Cuddle</item>
+        <item>Fast</item>
+        <item>Brown</item>
+    </string-array>
+
+    <string-array name="last_names">
+        <item>Monkey</item>
+        <item>Arra</item>
+        <item>Turtle</item>
+        <item>Chetah</item>
+        <item>Chipmunk</item>
+        <item>Giraffe</item>
+        <item>Elephant</item>
+        <item>Bird</item>
+        <item>Rooster</item>
+        <item>Toucan</item>
+        <item>Bear</item>
+        <item>Rabbit</item>
+        <item>Lion</item>
+        <item>Owl</item>
+        <item>Cat</item>
+        <item>Zebra</item>
+        <item>Tiger</item>
+        <item>Deer</item>
+        <item>Eagle</item>
+        <item>Camel</item>
+        <item>Bee</item>
+        <item>Crocodile</item>
+        <item>Kangaroo</item>
+        <item>Snake</item>
+        <item>Reindeer</item>
+        <item>Frog</item>
+        <item>Pig</item>
+        <item>Fox</item>
+        <item>Panda</item>
+        <item>Koala</item>
+        <item>Ostrich</item>
+        <item>Meerkat</item>
+    </string-array>
+
+    <string-array name="designations">
+        <item>Technical Specialist</item>
+        <item>Personal Assistant</item>
+        <item>Account Manager</item>
+        <item>Product Manager</item>
+        <item>Dev-Ops Engineer</item>
+        <item>Technical Specialist</item>
+        <item>Sales Director</item>
+        <item>VP Marketing</item>
+        <item>Network Engineer</item>
+        <item>Sales Manager</item>
+        <item>Designer</item>
+        <item>Network Engineer</item>
+        <item>Co-Founder</item>
+        <item>VP Finance</item>
+        <item>Designer</item>
+        <item>VP Sales</item>
+        <item>CEO</item>
+        <item>Marketing Specialist</item>
+        <item>Support Rep</item>
+        <item>Solution Architect</item>
+        <item>Co-Founder</item>
+        <item>Solution Architect</item>
+        <item>Product Manager</item>
+        <item>Engineer</item>
+        <item>Technician</item>
+        <item>Receptionist</item>
+        <item>Account Manager</item>
+        <item>Support Rep</item>
+        <item>Dev-Ops Engineer</item>
+        <item>Network Engineer</item>
+        <item>Technician</item>
+        <item>Solution Architect</item>
+    </string-array>
+
+    <array name="images">
+        <item>@drawable/funky_monkey</item>
+        <item>@drawable/parrot_arra</item>
+        <item>@drawable/happy_turtle</item>
+        <item>@drawable/sleeping_chetah</item>
+        <item>@drawable/happy_chipmunk</item>
+        <item>@drawable/long_giraffe</item>
+        <item>@drawable/little_elephant</item>
+        <item>@drawable/blue_bird</item>
+        <item>@drawable/colorful_rooster</item>
+        <item>@drawable/tropical_toucan</item>
+        <item>@drawable/cute_bear</item>
+        <item>@drawable/white_rabbit</item>
+        <item>@drawable/king_lion</item>
+        <item>@drawable/night_owl</item>
+        <item>@drawable/forest_cat</item>
+        <item>@drawable/striped_zebra</item>
+        <item>@drawable/jungle_tiger</item>
+        <item>@drawable/baby_deer</item>
+        <item>@drawable/wild_eagle</item>
+        <item>@drawable/safari_camel</item>
+        <item>@drawable/honey_bee</item>
+        <item>@drawable/angry_crocodile</item>
+        <item>@drawable/mountain_kangaroo</item>
+        <item>@drawable/scary_snake</item>
+        <item>@drawable/greenland_reindeer</item>
+        <item>@drawable/crazy_frog</item>
+        <item>@drawable/black_pig</item>
+        <item>@drawable/red_fox</item>
+        <item>@drawable/bamboo_panda</item>
+        <item>@drawable/cuddly_koala</item>
+        <item>@drawable/fast_ostrich</item>
+        <item>@drawable/brown_meerkat</item>
+    </array>
+</resources>

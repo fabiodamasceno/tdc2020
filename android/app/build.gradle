@@ -1,5 +1,11 @@
 apply plugin: 'com.android.application'
 apply plugin: 'checkstyle'
+apply from: "../../node_modules/react-native/react.gradle"
+
+project.ext.react = [
+    enableHermes: false,  // clean and rebuild if changing
+]
+
 
 import java.util.Map;
 
@@ -8,16 +14,18 @@ check.dependsOn('checkstyle')
 def snippetsPath = "snippets"
 def examplesPath = "examples"
 def integrationTestsPath = "integrationtests"
+def enableHermes = project.ext.react.get("enableHermes", false);
+def jscFlavor = 'org.webkit:android-jsc:+'
 
 // tag::KEYS-1[]
 android {
-    compileSdkVersion 28
+    compileSdkVersion rootProject.ext.compileSdkVersion
     defaultConfig {
         // tag::ignore[]
         applicationId "com.pubnub.crc.android"
         // end::ignore[]
-        minSdkVersion 16
-        targetSdkVersion 28
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -93,23 +101,9 @@ task checkstyle(type: Checkstyle) {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-//noinspection GradleDynamicVersion
     implementation "com.facebook.react:react-native:+"  // From node_modules
 
     implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.0.0"
-
-    debugImplementation("com.facebook.flipper:flipper:${FLIPPER_VERSION}") {
-      exclude group:'com.facebook.fbjni'
-    }
-
-    debugImplementation("com.facebook.flipper:flipper-network-plugin:${FLIPPER_VERSION}") {
-        exclude group:'com.facebook.flipper'
-        exclude group:'com.squareup.okhttp3', module:'okhttp'
-    }
-
-    debugImplementation("com.facebook.flipper:flipper-fresco-plugin:${FLIPPER_VERSION}") {
-        exclude group:'com.facebook.flipper'
-    }
 
     if (enableHermes) {
         def hermesPath = "../../node_modules/hermes-engine/android/";
@@ -149,3 +143,9 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.0'
     androidTestImplementation 'org.awaitility:awaitility:3.1.5'
 }
+
+task copyDownloadableDepsToLibs(type: Copy) {
+    from configurations.compile
+    into 'libs'
+}
+apply from: file("../../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesAppBuildGradle(project)

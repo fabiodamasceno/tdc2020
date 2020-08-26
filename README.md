@@ -1,8 +1,11 @@
-# tdc2020
+# TDC 2020 - Do nativo ao react native
 React Native migration strategies samples.
 
 Run and setup like react native projects : https://reactnative.dev/docs/environment-setup
 
+
+This sample uses  **Java Chat with PubNub**(**Java Chat with PubNub**) and **Real time Swift iOS Chat with Firebase - Messenger Clone**
+(https://github.com/instamobile/messenger-iOS-chat-swift-firestore) to give a real sample experience for how React Native is flexible to migrate native code to Typescript components.
 
 MIT License
 
